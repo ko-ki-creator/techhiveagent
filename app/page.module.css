@@ -1,0 +1,112 @@
+.main_visual {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.mv {
+    object-fit: cover;
+    position: absolute;
+    inset: 0; /* top:0; right:0; bottom:0; left:0 */
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.mv_copy {
+    position: relative;
+    z-index: 2;
+    max-width: 1260px;
+    margin: 0 auto;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sub_copy {
+    color: #84F5FF;
+    font-size: 1.5em;
+    letter-spacing: 0.16em;
+    text-shadow: var(--black_shadow);
+}
+
+.main_copy {
+    color: var(--white);
+    font-family: var(--font_inter);
+    font-size: 7.5em;
+    font-weight: bold;
+    line-height: 1.1em;
+    text-shadow: var(--black_shadow);
+}
+
+.mv_text {
+    color: var(--white);
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-shadow: var(--black_shadow);
+}
+
+.mv_btn {
+    display: flex;
+    gap: 24px;
+}
+
+.contact_btn,
+.consul_btn {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+    outline: none;
+    color: var(--white);
+    background-color: var(--blue);
+    position: relative;
+    border: 1px solid var(--blue);
+    transition: color 0.5s ease;
+
+    &:hover {
+        color: var(--blue);
+    }
+
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: var(--white);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 0.5s ease;
+        transition-property: transform;
+    }
+}
+
+.contact_btn_text,
+.consul_btn_text {
+    position: relative;
+    font-weight: 600;
+}
+
+.consul_btn {
+    color: var(--blue);
+    background-color: var(--white);
+
+    &:hover {
+        color: var(--white);
+    }
+
+    &::before {
+        background: var(--blue);
+    }
+}
