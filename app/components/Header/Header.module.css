@@ -2,14 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1260px;
+    width: 100%;
+    max-width: 1260px;
     margin: 40px auto;
+    gap: 16px;
+}
+
+.logo {
+    margin-left: 16px;
 }
 
 .nav {
     background-color: var(--white);
     display: block;
     border-radius: 40;
+    margin-right: 16px;
 }
 
 .nav_ul {

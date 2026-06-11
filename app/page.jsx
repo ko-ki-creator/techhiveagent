@@ -35,7 +35,28 @@ export default function Home() {
           </div>
 
           {/* AGENT IN ACTION */}
-          
+          <section className={style.agent_in_action}>
+            <div className={style.section_wrapper}>
+              <div className={style.agent_in_action_inner}>
+                <p className={style.section_name}>AGENT IN ACTION</p>
+                <h2 className={style.section_ttl}>人事のサポーター、<br />本日も稼働中。</h2>
+                <p className={style.text}>
+                  TechHive Agent は24時間365日、人事の定常業務を代行し、 人間の介入が必要なものとそうじゃないものを判断します。AIモデルの進化に伴い能力は上がり、退職しないため、業務の習熟度も使い続けるほどに高まり続けます。
+                </p>
+                <hr />
+                <div className={style.number_mark}>
+                  <p className={style.sub_text}>労働者派遣 13-317727</p>
+                  <p className={style.sub_text}>プライバシーマーク 21005002(01)</p>
+                </div>
+              </div>
+              <Image
+                src="/images/agent_card.jpg"
+                alt="AIエージェントカード"
+                width={315}
+                height={320}
+              />
+            </div>
+          </section>
         </div>
       </main>
     </div>

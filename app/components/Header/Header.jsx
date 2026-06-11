@@ -5,7 +5,7 @@ import style from "./Header.module.css";
 export default function Header() {
     return (
         <header className={style.header}>
-            <Link href="/">
+            <Link href="/" className={style.logo}>
                 <Image
                     src="/images/logo.png"
                     alt="TechHiveAgentのロゴ"
