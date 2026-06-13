@@ -11,7 +11,7 @@
     position: absolute;
     inset: 0; /* top:0; right:0; bottom:0; left:0 */
     width: 100%;
-    height: auto;
+    height: 800px;
     z-index: 0;
 }
 
@@ -67,6 +67,7 @@
     background-color: var(--blue);
     position: relative;
     border: 1px solid var(--blue);
+    border-radius: 4;
     transition: color 0.5s ease;
 
     &:hover {
@@ -109,7 +110,8 @@
     }
 
     &::before {
-        background: var(--blue);
+        /* background: var(--blue); */
+        background-image: linear-gradient(45deg, #944EFC, #4052F4);
     }
 }
 
@@ -178,7 +180,7 @@ THE NUMBERS
     width: 100%;
     max-width: 1080px;
     height: auto;
-    margin: 0 auto 160px;
+    margin: 0 auto;
     gap: 16px;
 }
 
@@ -187,6 +189,7 @@ THE NUMBERS
     flex-direction: column;
     gap: 16px;
     color: var(--white);
+    margin-bottom: 40px;
 
     .text {
         color: var(--white);
@@ -205,16 +208,73 @@ THE NUMBERS
 
 .numbers_box {
     color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 24px;
 }
 
-.box_one {
-    background-image: linear-gradient(45deg, #3E5FDA, #223EA4);
+.box {
     border: 1px solid rgba(255, 255, 255, .7);
     border-radius: 16;
     padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 44%;
+    /* backdrop-filter: blur(3px); ガラスフィルター */
+}
+
+.box_one {
+    background-image: linear-gradient(45deg, #3E5FDA, #223EA4);
+}
+
+.box_two {
+    background-image: linear-gradient(45deg, #325FFE, #42A3F6);
+
+    .human_graph_line {
+        width: 300px;
+    }
+
+    .agent {
+        width: 60px;
+    }
+
+    .agent_graph_line {
+        width: 60px;
+    }
+}
+
+.box_three {
+    background-image: linear-gradient(45deg, #319F8A, #35CCB0);
+
+    .human_graph_line {
+        width: 320px;
+    }
+
+    .agent {
+        width: 59px;
+    }
+
+    .agent_graph_line {
+        width: 10px;
+    }
+}
+
+.box_four {
+    background-image: linear-gradient(45deg, #944EFC, #4052F4);
+
+    .human_graph_line {
+        width: 280px;
+    }
+
+    .agent {
+        width: 30px;
+    }
+
+    .agent_graph_line {
+        width: 10px;
+    }
 }
 
 .box_ttl {
@@ -222,6 +282,11 @@ THE NUMBERS
     gap: 16px;
     font-size: 1.5em;
     line-height: 1.75em;
+}
+
+.month_time {
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .gauge {
@@ -278,4 +343,77 @@ THE NUMBERS
 
 .numbers_sub {
     font-size: 1.5em;
+}
+
+.numbers_text {
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.note {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.recruit {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(62, 95, 218, 0.2);
+    border: 1px solid rgba(255, 225, 255, 1);
+    border-radius: 16;
+    padding: 24px;
+    align-items: center;
+}
+
+.recruit_group {
+    color: var(--white);
+}
+
+.limited {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.recruit_contact_btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: var(--white);
+    background-image: linear-gradient(45deg, #319F8A, #35CCB0);
+    position: relative;
+    border-radius: 24;
+    transition: color 0.5s ease;
+    height: fit-content;
+    padding: 12px 16px;
+
+    &:hover {
+        color: #319F8A;
+    }
+
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: var(--white);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 0.5s ease;
+        transition-property: transform;
+        border-radius: 24;
+    }
+}
+
+.recruit_contact_btn_text {
+    position: relative;
+    font-weight: 600;
 }

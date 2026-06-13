@@ -68,7 +68,7 @@ export default function Home() {
                 <p className={style.text}>外注するより、AIに任せる方が圧倒的に安く、長く、確実に動く。</p>
               </div>
               <div className={style.numbers_box}>
-                <div className={style.box_one}>
+                <div className={`${style.box} ${style.box_one}`}>
                   <div className={style.box_ttl}>
                     <span className={style.number}>01</span>
                     <h3 className={style.month_time}>月間稼働時間</h3>
@@ -91,8 +91,96 @@ export default function Home() {
                     <p className={style.numbers_text}>24/人間は労働法で月160時間しか働けない。AIは744時間（24h×31日）、人間の4.65倍動ける。</p>
                   </div>
                 </div>
+
+                <div className={`${style.box} ${style.box_two}`}>
+                  <div className={style.box_ttl}>
+                    <span className={style.number}>02</span>
+                    <h3 className={style.month_time}>費用削減</h3>
+                  </div>
+                  <div className={style.gauge}>
+                    <div className={style.human_graph}>
+                      <p className={style.human}>RPO 2名</p>
+                      <div className={style.human_graph_line}></div>
+                      <p className={style.time}>¥140万/月</p>
+                    </div>
+                    <div className={style.agent_graph}>
+                      <p className={style.agent}>THA</p>
+                      <div className={style.agent_graph_line}></div>
+                      <p className={style.time}>¥20万/月</p>
+                    </div>
+                  </div>
+                  <div className={style.numbers_group}>
+                    <h4 className={style.numbers_large}>1,440<span>万/年</span></h4>
+                    <h5 className={style.numbers_sub}>テスト稼働で1,440万円削減</h5>
+                    <p className={style.numbers_text}>月70万のRPO 2名分を、月20万のTHAに置き換え。月120万円×12ヶ月。</p>
+                  </div>
+                  <p className={style.note}>※当社グループRPO領域テスト稼働実績ベース</p>
+                </div>
+
+                <div className={`${style.box} ${style.box_three}`}>
+                  <div className={style.box_ttl}>
+                    <span className={style.number}>03</span>
+                    <h3 className={style.month_time}>工数削減</h3>
+                  </div>
+                  <div className={style.gauge}>
+                    <div className={style.human_graph}>
+                      <p className={style.human}>人手 2名</p>
+                      <div className={style.human_graph_line}></div>
+                      <p className={style.time}>320h/月</p>
+                    </div>
+                    <div className={style.agent_graph}>
+                      <p className={style.agent}>AI委任</p>
+                      <div className={style.agent_graph_line}></div>
+                      <p className={style.time}>0h</p>
+                    </div>
+                  </div>
+                  <div className={style.numbers_group}>
+                    <h4 className={style.numbers_large}>320<span>h/月</span></h4>
+                    <h5 className={style.numbers_sub}>実績ベースで、人事工数を320h削減</h5>
+                    <p className={style.numbers_text}>年換算 3,840時間。人事担当者は、評価・組織設計などコア業務に専念できる。</p>
+                  </div>
+                  <p className={style.note}>※当社グループRPO2名分の工数をAIが代替した実績ベース</p>
+                </div>
+
+                <div className={`${style.box} ${style.box_four}`}>
+                  <div className={style.box_ttl}>
+                    <span className={style.number}>04</span>
+                    <h3 className={style.month_time}>応答速度</h3>
+                  </div>
+                  <div className={style.gauge}>
+                    <div className={style.human_graph}>
+                      <p className={style.human}>人間</p>
+                      <div className={style.human_graph_line}></div>
+                      <p className={style.time}>数時間〜翌営業日</p>
+                    </div>
+                    <div className={style.agent_graph}>
+                      <p className={style.agent}>AI</p>
+                      <div className={style.agent_graph_line}></div>
+                      <p className={style.time}>1分以内</p>
+                    </div>
+                  </div>
+                  <div className={style.numbers_group}>
+                    <h4 className={style.numbers_large}>1<span>分以内</span></h4>
+                    <h5 className={style.numbers_sub}>24/365、1分以内に応答</h5>
+                    <p className={style.numbers_text}>深夜・週末・連休、人間が動けない時間帯も1分以内に処理。問い合わせも申請も止まらない。</p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.recruit}>
+                <div className={style.recruit_group}>
+                  <h5 className={style.limited}>※期間限定でパイロット顧客を募集しています。</h5>
+                  <p className={style.limited_text}>6月から7月にかけて、特別料金オファー実施中。</p>
+                </div>
+                <Link href="/contact" className={style.recruit_contact_btn}>
+                  <span className={style.recruit_contact_btn_text}>お問い合わせ・商談予約 →</span>
+                </Link>
               </div>
             </div>
+          </section>
+
+          {/* TRY IT NOW */}
+          <section>
+            
           </section>
         </div>
       </main>
