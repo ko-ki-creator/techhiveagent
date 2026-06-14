@@ -179,8 +179,16 @@ export default function Home() {
           </section>
 
           {/* TRY IT NOW */}
-          <section>
-            
+          <section className={style.try_it_now}>
+            <div className="try_it_now_wrapper">
+              <div className="try_it_now_inner">
+                <p className="section_name">TRY IT NOW</p>
+                <h2 className="section_ttl">触って、体験する。</h2>
+                <p className={style.text}>
+                  TechHive Agent の実際のUIをそのまま埋め込んでいます。スクロール・クリックして操作感をご確認ください。
+                </p>
+              </div>
+            </div>
           </section>
         </div>
       </main>
