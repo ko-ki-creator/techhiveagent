@@ -171,7 +171,38 @@ THE NUMBERS
     background-image: linear-gradient(90deg, #1571da, #7aabe3);
     width: 100%;
     height: auto;
+    margin-bottom: 160px;
     padding: 80px 0;
+    position: relative;
+}
+
+.hexagon_2 {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    z-index: 1;
+}
+
+.hexagon {
+    position: absolute;
+    bottom: 16%;
+    left: -1%;
+    z-index: 1;
+}
+
+.hexagon_2,
+.hexagon {
+    /* アニメーション名、再生時間、変化の速度、ループ設定 */
+    animation: fluffy-anime 2.5s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes fluffy-anime {
+    0% {
+        transform: translateY(0); /* 通常の位置 */
+    }
+    100% {
+        transform: translateY(-40px); /* 上に15px移動 */
+    }
 }
 
 .the_numbers_wrapper {
@@ -182,6 +213,8 @@ THE NUMBERS
     height: auto;
     margin: 0 auto;
     gap: 16px;
+    position: relative;
+    z-index: 10;
 }
 
 .the_numbers_inner {
@@ -416,4 +449,17 @@ THE NUMBERS
 .recruit_contact_btn_text {
     position: relative;
     font-weight: 600;
+}
+
+
+/* --------------
+TRY IT NOW
+-------------- */
+.try_it_now_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto 160px;
 }

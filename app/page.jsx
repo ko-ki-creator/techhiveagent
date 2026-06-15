@@ -61,6 +61,20 @@ export default function Home() {
 
           {/* THE NUMBERS */}
           <section className={style.the_numbers}>
+            <Image
+              src="/images/hexagon_2.svg"
+              alt="六角形の装飾"
+              width={440}
+              height={380}
+              className={style.hexagon_2}
+            />
+            <Image
+              src="/images/hexagon.svg"
+              alt="六角形の装飾"
+              width={290}
+              height={290}
+              className={style.hexagon}
+            />
             <div className={style.the_numbers_wrapper}>
               <div className={style.the_numbers_inner}>
                 <p className={style.section_name_white}>THE NUMBERS</p>
@@ -180,13 +194,33 @@ export default function Home() {
 
           {/* TRY IT NOW */}
           <section className={style.try_it_now}>
-            <div className="try_it_now_wrapper">
-              <div className="try_it_now_inner">
+            <div className={style.try_it_now_wrapper}>
+              <div className={style.try_it_now_inner}>
                 <p className="section_name">TRY IT NOW</p>
                 <h2 className="section_ttl">触って、体験する。</h2>
                 <p className={style.text}>
                   TechHive Agent の実際のUIをそのまま埋め込んでいます。スクロール・クリックして操作感をご確認ください。
                 </p>
+              </div>
+              <div className={style.preview}>
+                  <Image
+                    src="/images/preview.jpg"
+                    alt="プレビュー画像"
+                    width={1080}
+                    height={667}
+                    className={style.preview_img}
+                  />
+              </div>
+            </div>
+          </section>
+
+          {/* A NEW STANDARD */}
+          <section className={style.a_new_standard}>
+            <div className={style.a_new_standard_wrapper}>
+              <div className={style.a_new_standard_inner}>
+                <p className="section_name">A NEW STANDARD</p>
+                <h2 className="section_ttl">ノンコア業務、全部AIに任せませんか？</h2>
+                <p className={style.text}>採用・労務・問合せ対応——人事のノンコア業務を担ってきた人手は、いつかは退職か交代となります。AIは、辞めず、24時間動き、賢くなり続けます。</p>
               </div>
             </div>
           </section>
