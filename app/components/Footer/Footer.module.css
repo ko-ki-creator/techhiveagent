@@ -1,0 +1,141 @@
+.footer {
+    width: 92%;
+    margin: 0 auto 40px;
+    padding-top: 160px;
+    position: relative;
+}
+
+.footer_ttl {
+    font-size: 6em;
+    color: var(--blue);
+    text-shadow: var(--white);
+    margin-bottom: 40px;
+}
+
+.ai {
+    color: #E085B2;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.nav {
+    /* background-color: var(--white); */
+    display: block;
+    border-radius: 40;
+}
+
+.nav_ul {
+    display: flex;
+    gap: 48px;
+}
+
+.nav_li {
+    list-style: none;
+}
+
+.li_item {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 8%;
+    overflow: hidden;
+    color: transparent;
+    text-shadow: 0 -1.5em 0 var(--brack), 0 0 0 var(--brack);
+    transition: text-shadow 0.3s;
+
+    &:hover {
+        text-shadow: 0 0 0 var(--blue), 0 1.5em 0 var(--blue);
+    }
+}
+
+.contact_btn {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-decoration: none;
+    color: var(--white);
+    transition: text-shadow 0.3s;
+    background-color: var(--blue);
+    margin-bottom: 40px;
+    padding: 16px 80px;
+    border-radius: 40;
+    letter-spacing: 8%;
+    width: fit-content;
+    transition: all .3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    .contact_text {
+        color: var(--white);
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+.company {
+    color: var(--blue);
+    line-height: 1.5em;
+    margin-bottom: 40px;
+}
+
+.copyright {
+    color: var(--blue);
+}
+
+.hexagon_blue,
+.hexagon_darkblue,
+.hexagon_green,
+.hexagon_purple,
+.hexagon_line_blue,
+.hexagon_line_green,
+.hexagon_line_purple {
+    position: absolute;
+}
+
+.hexagon_blue {
+    top: 0;
+    right: 20%;
+    z-index: -1;
+}
+
+.hexagon_darkblue {
+    top: 50%;
+    right: 30%;
+    z-index: -3;
+}
+
+.hexagon_green {
+    top: 32%;
+    right: 36%;
+    z-index: -2;
+}
+
+.hexagon_purple {
+    top: 70%;
+    right: 16%;
+    z-index: -1;
+}
+
+.hexagon_line_blue {
+    top: 76%;
+    right: 48%;
+    z-index: -1;
+}
+
+.hexagon_line_green {
+    top: 40%;
+    right: 12%;
+    z-index: -1;
+}
+
+.hexagon_line_purple {
+    top: 72%;
+    right: 8%;
+    z-index: -1;
+}
