@@ -463,3 +463,116 @@ TRY IT NOW
     max-width: 1080px;
     margin: 0 auto 160px;
 }
+
+
+/* --------------
+A NEW STANDARD
+-------------- */
+
+.a_new_standard_wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.axis_box_group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.axis_box {
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    /* gap: 16px; */
+    padding: 24px;
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 16;
+}
+
+.axis_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.axis {
+    font-size: 1.5em;
+    color: var(--blue);
+    letter-spacing: 0.8;
+}
+
+.axis_ttl {
+    font-size: 2.5em;
+    color: var(--blue);
+    margin-bottom: 24px;
+}
+
+.axis_text {
+    font-weight: 300;
+}
+
+.axis_group_img {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sup {
+    font-size: 0.8em;
+    color: #999999;
+}
+
+
+/* --------------
+EXPLORE
+-------------- */
+
+.explore_wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.explore_group {
+    display: flex;
+    gap: 16px;
+}
+
+.explore_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 16;
+    text-decoration: none;
+    width: 100%;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #d4e6fa;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.24);
+    }
+}
+
+.explore_ttl {
+    color: var(--black);
+    font-size: 1.5em;
+}
+
+.explore_text {
+    color: var(--black);
+    font-size: 0.75em;
+}
+
+.detail_btn {
+    color: var(--blue);
+}

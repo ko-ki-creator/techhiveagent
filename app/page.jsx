@@ -222,6 +222,83 @@ export default function Home() {
                 <h2 className="section_ttl">ノンコア業務、全部AIに任せませんか？</h2>
                 <p className={style.text}>採用・労務・問合せ対応——人事のノンコア業務を担ってきた人手は、いつかは退職か交代となります。AIは、辞めず、24時間動き、賢くなり続けます。</p>
               </div>
+              <div className={style.axis_box_group}>
+                <div className={style.axis_box}>
+                  <div className={style.axis_group}>
+                    <p className={style.axis}>AXIS 01</p>
+                    <h3 className={style.axis_ttl}>時間</h3>
+                    <p className={style.axis_text}>人手の稼働は労働法の8時間に縛られる。<br />AIは法律の対象外、24/365動き続ける。</p>
+                  </div>
+                  <div className={style.axis_group_img}>
+                    <Image
+                      src="/images/axis_01_human.png"
+                      alt="人が働く時間"
+                      width={711}
+                      height={72}
+                    />
+                    <Image
+                      src="/images/axis_01_ai.png"
+                      alt="人が働く時間"
+                      width={711}
+                      height={72}
+                    />
+                    <p className={style.sup}>※ 平日／休日を問わず365日同じ稼働</p>
+                  </div>
+                </div>
+
+                <div className={style.axis_box}>
+                  <div className={style.axis_group}>
+                    <p className={style.axis}>AXIS 02</p>
+                    <h3 className={style.axis_ttl}>積み重ね</h3>
+                    <p className={style.axis_text}>人手は退職するたび、業務知が0に戻る。<br />AIはスキルを蓄積し、組織に残り、積み上がり続ける。</p>
+                  </div>
+                  <Image
+                    src="/images/axis_02_graph.png"
+                    alt="AIスキルの蓄積"
+                    width={711}
+                    height={345}
+                  />
+                </div>
+
+                <div className={style.axis_box}>
+                  <div className={style.axis_group}>
+                    <p className={style.axis}>AXIS 03</p>
+                    <h3 className={style.axis_ttl}>業務の精度</h3>
+                    <p className={style.axis_text}>業務精度、判断力はは属人的であり、<br />個人の成長上限で止まる。<br />AIはモデルの進化により推論力が増しつづける。</p>
+                  </div>
+                  <Image
+                    src="/images/axis_03_graph.png"
+                    alt="業務制度"
+                    width={711}
+                    height={345}
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* EXPLORE */}
+          <section className={style.explore}>
+            <div className={style.explore_wrapper}>
+              <div className={style.explore_inner}>
+                <p className="section_name">EXPLORE</p>
+                <h2 className="section_ttl">深掘りする</h2>
+                <p className={style.text}>関心のあるテーマからどうぞ。</p>
+              </div>
+              <div className={style.explore_group}>
+                <Link href="/methodology" className={style.explore_btn}>
+                  <p className="section_name">METHODOLOGY</p>
+                  <h3 className={style.explore_ttl}>製品の仕組み</h3>
+                  <p className={style.explore_text}>BFC × Skill、4段階リスクティア、Claudeモデルの使い分け、How it works。</p>
+                  <p className={style.detail_btn}>詳細を見る→</p>
+                </Link>
+                <Link href="/technology" className={style.explore_btn}>
+                  <p className="section_name">TECHNOLOGY</p>
+                  <h3 className={style.explore_ttl}>業務領域別の対応</h3>
+                  <p className={style.explore_text}>採用 / 労務 / 入退社 / 社内HR問合せ。BFC 183プロセスから貴社業務にカスタマイズ。</p>
+                  <p className={style.detail_btn}>詳細を見る→</p>
+                </Link>
+              </div>
             </div>
           </section>
         </div>
