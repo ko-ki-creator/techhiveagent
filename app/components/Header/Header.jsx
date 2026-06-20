@@ -19,19 +19,19 @@ export default function Header() {
                         <Link href="/" className={style.li_item}>TOP</Link>
                     </li>
                     <li className={style.nav_li}>
-                        <Link href="" className={style.li_item}>METHODOLOGY</Link>
+                        <Link href="/methodology" className={style.li_item}>METHODOLOGY</Link>
                     </li>
                     <li className={style.nav_li}>
-                        <Link href="" className={style.li_item}>TECHNOLOGY</Link>
+                        <Link href="/technology" className={style.li_item}>TECHNOLOGY</Link>
                     </li>
                     <li className={style.nav_li}>
-                        <Link href="" className={style.li_item}>HYBRID</Link>
+                        <Link href="/hybrid" className={style.li_item}>HYBRID</Link>
                     </li>
                     <li className={style.nav_li}>
-                        <Link href="" className={style.li_item}>ABOUT</Link>
+                        <Link href="https://www.asikaze.com/about" className={style.li_item}>ABOUT</Link>
                     </li>
                     <li className={style.nav_li}>
-                        <Link href="" className={style.contact_btn}>CONTACT</Link>
+                        <Link href="/contact" className={style.contact_btn}>CONTACT</Link>
                     </li>
                 </ul>
             </nav>

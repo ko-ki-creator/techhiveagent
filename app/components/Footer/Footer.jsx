@@ -26,8 +26,8 @@ export default function Footer() {
                         </li>
                     </ul>
                 </nav>
-                <Link href="" className={style.contact_btn}>
-                    <Image 
+                <Link href="/" className={style.contact_btn}>
+                    <Image
                         src="/images/mail_icon.svg"
                         alt="メールアイコン"
                         width={20}

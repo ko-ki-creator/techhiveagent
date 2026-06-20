@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.title {
+    color: var(--blue);
+    font-size: 5em;
+}
+
+.sub_title {
+    color: var(--brack);
+    font-size: 2em;
+}
+
+.text {
+    width: 60%;
+}

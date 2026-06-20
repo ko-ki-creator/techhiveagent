@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.section_name {
+    color: var(--blue);
+    letter-spacing: 8%;
+    font-weight: 500;
+}
+
+.title {
+    color: var(--blue);
+    font-size: 3em;
+    line-height: 1.5em;
+}

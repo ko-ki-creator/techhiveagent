@@ -1,6 +1,7 @@
 import Image from "next/image";
 import style from "./page.module.css";
 import Link from "next/link";
+import ExploreCard from "./components/ExploreCard/ExploreCard";
 
 export default function Home() {
   return (
@@ -286,18 +287,20 @@ export default function Home() {
                 <p className={style.text}>関心のあるテーマからどうぞ。</p>
               </div>
               <div className={style.explore_group}>
-                <Link href="/methodology" className={style.explore_btn}>
-                  <p className="section_name">METHODOLOGY</p>
-                  <h3 className={style.explore_ttl}>製品の仕組み</h3>
-                  <p className={style.explore_text}>BFC × Skill、4段階リスクティア、Claudeモデルの使い分け、How it works。</p>
-                  <p className={style.detail_btn}>詳細を見る→</p>
-                </Link>
-                <Link href="/technology" className={style.explore_btn}>
-                  <p className="section_name">TECHNOLOGY</p>
-                  <h3 className={style.explore_ttl}>業務領域別の対応</h3>
-                  <p className={style.explore_text}>採用 / 労務 / 入退社 / 社内HR問合せ。BFC 183プロセスから貴社業務にカスタマイズ。</p>
-                  <p className={style.detail_btn}>詳細を見る→</p>
-                </Link>
+                <ExploreCard
+                  href="/methodology"
+                  sectionName="METHODOLOGY"
+                  title="製品の仕組み"
+                  description="BFC × Skill、4段階リスクティア、Claudeモデルの使い分け、How it works。"
+                  detailText="詳細はこちら→"
+                />
+                <ExploreCard
+                  href="/technology"
+                  sectionName="TECHNOLOGY"
+                  title="業務領域別の対応"
+                  description="採用 / 労務 / 入退社 / 社内HR問合せ。BFC 183プロセスから貴社業務にカスタマイズ。"
+                  detailText="詳細はこちら→"
+                />
               </div>
             </div>
           </section>
