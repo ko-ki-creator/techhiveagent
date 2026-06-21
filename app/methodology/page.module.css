@@ -1,7 +1,7 @@
 .wrapper {
     width: 100%;
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 0 auto 160px;
 }
 
 .methodology_wrapper {
@@ -13,4 +13,38 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.phase {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.phase > * {
+    flex: 1;
+}
+
+.map {
+    background: linear-gradient(45deg, #3362FF, #42A1F6);
+}
+
+.mapType {
+    color: #28B1E9;
+}
+
+.build {
+    background: linear-gradient(45deg, #223EA2, #496BD5);
+}
+
+.buildType {
+    color: #3E50ED;
+}
+
+.scale {
+    background: linear-gradient(45deg, #32A18C, #36CAAF);
+}
+
+.scaleType {
+    color: #24C56D;
 }
