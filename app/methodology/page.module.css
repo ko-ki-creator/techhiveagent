@@ -6,13 +6,14 @@
 
 .methodology_wrapper {
     margin-bottom: 160px;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
-.pagetitle_logo {
-    position: absolute;
-    top: 0;
-    right: 0;
+.our_approach_wrapper {
+    margin-bottom: 160px;
 }
 
 .phase {
@@ -47,4 +48,73 @@
 
 .scaleType {
     color: #24C56D;
+}
+
+.hr_framework_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 160px;
+}
+
+.hr_framework_function {
+    position: relative;
+}
+
+.function_img {
+    position: relative;
+}
+
+.hexagon_darkblue {
+    position: absolute;
+    top: 0;
+    right: -30%;
+}
+
+.hexagon_green {
+    position: absolute;
+    top: 80%;
+    left: 0;
+}
+
+.function_inner {
+    position: relative;
+    margin-top: 24%;
+}
+
+.function_number {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    color: var(--white);
+}
+
+.number {
+    font-size: 5em;
+}
+
+.skill_workflow_group {
+    display: flex;
+    gap: 16px;
+}
+
+.skill_workflow_group > * {
+    flex: 1;
+}
+
+.skill {
+    background: linear-gradient(45deg, #3362FF, #42A1F6);
+}
+
+.implementation {
+    background: linear-gradient(45deg, #223EA2, #496BD5);
+}
+
+.improvement {
+    background: linear-gradient(45deg, #32A18C, #36CAAF);
 }
