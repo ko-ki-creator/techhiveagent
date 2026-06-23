@@ -4,6 +4,10 @@ import SectionTitle from '../components/SectionTitle/SectionTitle';
 import styles from './page.module.css';
 import PhaseCard from '../components/PhaseCard/PhaseCard';
 import SkillWorkflowCard from '../components/SkillWorkflowCard/SkillWorkflowCard';
+import TierCard from '../components/TierCard/TierCard';
+import AreaCard from '../components/AreaCard/AreaCard';
+import ExploreCard from '../components/ExploreCard/ExploreCard';
+import Link from 'next/link';
 
 export default function Methodology() {
     return (
@@ -154,6 +158,101 @@ export default function Methodology() {
                             number="03"
                         />
                     </div>
+                </div>
+
+                {/* RISK TIER */}
+                <div className={styles.risk_tier_wrapper}>
+                    <SectionTitle
+                        sectionName="RISK TIER"
+                        title="4段階リスクティア"
+                        text="AIは下準備、判断は人間。行動の影響範囲に応じて、AIの権限を4段階に分離します。"
+                    />
+                    <div className={styles.tier}>
+                        <TierCard
+                            className={styles.tier_one}
+                            number="TIER 01"
+                            title="ReadOnly"
+                            textTop="読み取り業務。"
+                            textBottom="AIが自動実行→ログ記録"
+                            example="例:応募データ取込、スクリーニング、勤怠集計"
+                        />
+                        <TierCard
+                            className={styles.tier_two}
+                            number="TIER 02"
+                            title="Internal Write"
+                            textTop="内部書込。"
+                            textBottom="AIが実行 → 月次監査"
+                            example="例: ATS更新、Sheets書込、月次レポート"
+                        />
+                        <TierCard
+                            className={styles.tier_three}
+                            number="TIER 03"
+                            title="External Action"
+                            textTop="社外発信。"
+                            textBottom="人間承認必要"
+                            example="例:例: メール送信、スカウト、面接日程提案"
+                        />
+                        <TierCard
+                            className={styles.tier_four}
+                            number="TIER 04"
+                            title="Irreversible"
+                            textTop="不可逆。"
+                            textBottom="必ず人間承認"
+                            example="例: 不合格通知、内定通知、退職辞令"
+                        />
+                    </div>
+                </div>
+
+                {/* SCOPE */}
+                <div className={styles.scope_wrapper}>
+                    <SectionTitle
+                        sectionName="SCOPE"
+                        title="対応業務領域"
+                        text="採用32 / 労務44 / 勤怠14 / 給与20 / 評価育成24 / 人事企画23 / 問合せ9 / 従業員関係20。"
+                    />
+                    <div className={styles.area}>
+                        <AreaCard
+                            areaNumber="AREA 01"
+                            title = "採用"
+                            text = "応募〜面接調整〜合否通知までを9ステップで自動化。スカウト返信ドラフト・面接官調整・候補者リマインド。"
+                        />
+                        <AreaCard
+                            areaNumber="AREA 02"
+                            title = "労務"
+                            text = "社保・雇用保険・住所変更・扶養変更・年末調整13種控除。法令ベースの判定で対応。"
+                        />
+                        <AreaCard
+                            areaNumber="AREA 03"
+                            title = "入退社"
+                            text = "入社書類収集・アカウント発行・オンボーディングメール配信・退社時引継ぎ管理。"
+                        />
+                        <AreaCard
+                            areaNumber="AREA 04"
+                            title = "社内HR問合せ対応"
+                            text = "「有給残は？」「給与明細は？」のFAQ自動応答。複雑な相談は人間にエスカレ。"
+                        />
+                    </div>
+                    <div className={styles.bfc}>
+                        <p className={styles.bfc_text}>BFCは「標準実装」です。実際の対応領域は、貴社の業務フローに合わせてオーダーメイドで構築。マニュアル・実データを「育てる対話」でTechHive Agentはアップデートしていきます。</p>
+                    </div>
+                </div>
+
+                {/* EXPLORE */}
+                <div className={styles.explore_wrapper}>
+                    <ExploreCard
+                        href="/technology"
+                        sectionName="TECHNOLOGY"
+                        title="技術スタックを見る"
+                        description="Anthropic Managed Agents / Opus・Sonnet・Haiku / 連携SaaS / セキュリティ"
+                        detailText="Technology →"
+                    />
+                    <ExploreCard
+                        href="/contact"
+                        sectionName="CONTACT"
+                        title="話を聞く"
+                        description="30分オンライン相談 / パイロット申込"
+                        detailText="Contact →"
+                    />
                 </div>
             </div>
         </>

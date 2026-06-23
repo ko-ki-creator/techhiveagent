@@ -1,0 +1,24 @@
+.area {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+}
+
+.area_number {
+    background-color: var(--blue);
+    color: var(--white);
+    width: fit-content;
+    padding: 0 8px;
+}
+
+.title {
+    color: var(--blue);
+    font-size: 1.5em;
+}
+
+.text {
+    color: var(--blue);
+}

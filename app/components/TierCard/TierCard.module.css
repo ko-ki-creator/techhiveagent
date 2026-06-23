@@ -1,0 +1,44 @@
+.number {
+    clip-path: polygon(0 0,90% 0,100% 50%,90% 100%,0 100);
+    background-color: var(--blue);
+    margin-bottom: 8px;
+    padding: 1px;
+}
+
+.tier_number {
+    clip-path: polygon(0 0,90% 0,100% 50%,90% 100%,0 100%);
+    background-color: var(--white);
+    padding: 16px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.pentagon {
+    clip-path: polygon(0 0,90% 0,100% 50%,90% 100%,0 100%);
+    background-color: var(--blue);
+    padding: 1px;
+    min-height: 160px;
+}
+
+.pentagon_inner {
+    clip-path: polygon(0 0,90% 0,100% 50%,90% 100%,0 100%);
+    background-color: var(--white);
+    padding: 16px 24px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 160px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.text {
+    line-height: 1.5em;
+}
+
+.example {
+    font-size: 0.8em;
+}

@@ -98,6 +98,12 @@
     font-size: 5em;
 }
 
+
+/* SKILL & WORKFLOW */
+.skill_workflow_wrapper {
+    margin-bottom: 160px;
+}
+
 .skill_workflow_group {
     display: flex;
     gap: 16px;
@@ -117,4 +123,71 @@
 
 .improvement {
     background: linear-gradient(45deg, #32A18C, #36CAAF);
+}
+
+
+
+/* RISK TIER */
+.risk_tier_wrapper {
+    margin-bottom: 160px;
+}
+
+.tier {
+    display: flex;
+    gap: 8px;
+}
+
+.tier > * {
+    flex: 1;
+}
+
+.tier_one {
+    color: var(--blue);
+}
+
+.tier_two {
+    color: var(--purple);
+}
+
+.tier_three {
+    color: var(--water);
+}
+
+.tier_four {
+    color: var(--green);
+}
+
+
+/* SCOPE */
+.scope_wrapper {
+    margin-bottom: 160px;
+}
+
+.area {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.area > * {
+    flex: 1;
+}
+
+.bfc {
+    border-left: 8px solid var(--blue);
+    padding: 16px 32px;
+    border-radius: 8px;
+    box-shadow: var(--blue_shadow);
+}
+
+.bfc_text {
+    color: #999999;
+    line-height: 2em;
+}
+
+
+/* EXPLORE */
+.explore_wrapper {
+    display: flex;
+    gap: 16px;
 }

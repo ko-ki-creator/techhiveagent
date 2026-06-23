@@ -561,6 +561,10 @@ EXPLORE
         background-color: #d4e6fa;
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.24);
     }
+
+    &:visited {
+        color: var(--black);
+    }
 }
 
 .explore_ttl {
