@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     max-width: 92%;
-    margin: 40px auto;
+    margin: 24px auto;
     gap: 16px;
 }
 
@@ -30,7 +30,7 @@
     letter-spacing: 8%;
     overflow: hidden;
     color: transparent;
-    text-shadow: 0 -1.5em 0 var(--brack), 0 0 0 var(--brack);
+    text-shadow: 0 -1.5em 0 var(--black), 0 0 0 var(--black);
     transition: text-shadow 0.3s;
 
     &:hover {
@@ -44,7 +44,7 @@
     color: transparent;
     text-shadow: 0 -2.0em 0 var(--white), 0 0 0 var(--white);
     transition: text-shadow 0.3s;
-    background-color: var(--brack);
+    background-color: var(--black);
     padding: 9px 24px;
     border-radius: 20;
     letter-spacing: 8%;

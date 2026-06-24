@@ -7,7 +7,7 @@ import SkillWorkflowCard from '../components/SkillWorkflowCard/SkillWorkflowCard
 import TierCard from '../components/TierCard/TierCard';
 import AreaCard from '../components/AreaCard/AreaCard';
 import ExploreCard from '../components/ExploreCard/ExploreCard';
-import Link from 'next/link';
+
 
 export default function Methodology() {
     return (

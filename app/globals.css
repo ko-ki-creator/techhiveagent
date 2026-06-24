@@ -1,5 +1,5 @@
 :root {
-    --brack: #444444;
+    --black: #444444;
     --white: #ffffff;
     --blue: #1571DA;
     --gray: #AAAAAA;
@@ -10,11 +10,13 @@
     --purple: #4A5DF3;
     --water: #1CA1E3;
     --green: #28C368;
+    --pink: #E41193;
 }
 
 body {
     font-family: 'Noto sans JP', sans-serif;
     font-size: 16px;
+    color: #333333;
 }
 
 * {
