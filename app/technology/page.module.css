@@ -38,3 +38,43 @@
 .anthropic_inner > * {
     flex: 1;
 }
+
+.model_intelligence {
+    margin-bottom: 160px;
+}
+
+.security {
+    margin-bottom: 160px;
+}
+
+.security_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.security_item {
+    width: 46%;
+    list-style: none;
+    box-shadow: var(--black_shadow);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 16;
+}
+
+.security_content {
+    font-size: 1.5em;
+}
+
+.security_text {
+    font-size: 0.8em;
+}
+
+
+/* EXPLORE */
+.explore_wrapper {
+    display: flex;
+    gap: 16px;
+}

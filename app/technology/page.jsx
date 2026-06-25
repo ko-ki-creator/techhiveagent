@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import AnthropicCard from "../components/AnthropicCard/AnthropicCard";
 import Tab from "../components/Tab/Tab";
+import ExploreCard from "../components/ExploreCard/ExploreCard";
 
 export default function Technology() {
     return(
@@ -65,10 +66,63 @@ export default function Technology() {
                         title="Opus, Sonnet, Haiku."
                         text="業務ごとに、最適なClaudeモデルを使い分ける。"
                     />
-
                     <Tab />
-
                 </section>
+
+                {/* SECURITY */}
+                <section className={styles.security}>
+                    <SectionTitle
+                        sectionName="SECURITY"
+                        title="セキュリティ・監査"
+                        text="人事データは個人の生活に直結します。Anthropic / Vercel の隔離されたサンドボックス内で完結し、データの読み書き・外部送信はすべて Asikaze の API を必ず経由します。AI が直接 DB や外部サービスに触れることはありません。"
+                    />
+                    <div className={styles.security_card}>
+                        <ul className={styles.security_list}>
+                            <li className={styles.security_item}>
+                                <h3 className={styles.security_content}>モデル層の安全性</h3>
+                                <p className={styles.security_text}>基盤モデルは Anthropic Claude。AUP（利用規定）違反のブロックと Constitutional AI による有害・規約違反出力の抑制をモデル層で標準装備。TechHive Agent は独自に AI を作らず、Anthropic の安全機構をそのまま土台にしています。</p>
+                            </li>
+                            <li className={styles.security_item}>
+                                <h3 className={styles.security_content}>権限の最小化・仲介</h3>
+                                <p className={styles.security_text}>エージェントは DB にも外部 API にも直接接続できません。全アクセスは TechHive Agent の制御ゲートウェイ1点を経由し、テナントごとの権限スコープで制限。暗号化保管し、必要時のみ監査ログ付きで限定提供。常時保持はさせません</p>
+                            </li>
+                            <li className={styles.security_item}>
+                                <h3 className={styles.security_content}>人間による承認（HITL）</h3>
+                                <p className={styles.security_text}>操作をリスク段階（1. 参照 / 2. 内部更新 / 3. 外部アクション / 4. 不可逆操作）で分類。メール送信・合否通知など影響の大きい操作は人間の承認を必須にし、不可逆操作はダブル承認を求めます。</p>
+                            </li>
+                            <li className={styles.security_item}>
+                                <h3 className={styles.security_content}>アクセストークン管理</h3>
+                                <p className={styles.security_text}>テナント発行 API トークンは不可逆（SHA-256）でハッシュ化保存・発行時のみ平文表示・有効期限付き。漏洩時も即時失効できます。</p>
+                            </li>
+                            <li className={styles.security_item}>
+                                <h3 className={styles.security_content}>監査ログ・操作証跡</h3>
+                                <p className={styles.security_text}>エージェントの各操作を「いつ・誰の指示で・どのツールを・どんな入出力で実行したか」を追記専用（append-only）の台帳に記録。後からの改ざん・削除はできません。月次監査・例外調査・問い合わせ対応に利用できます。</p>
+                            </li>
+                            <li className={styles.security_item}>
+                                <h3 className={styles.security_content}>テナント分離</h3>
+                                <p className={styles.security_text}>全データにデータベースレベルのアクセス制御を適用し、他社データへのアクセスを遮断。エージェントは TechHive Agent の API 経由でしか DB に触れられず、テナントをまたぐ参照は構造的に不可能です。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                {/* EXPLORE */}
+                <div className={styles.explore_wrapper}>
+                    <ExploreCard
+                        href="/technology"
+                        sectionName="METHODOLOGY"
+                        title="方法論を見る"
+                        description="BFC / Skill / MAP-BUILD-SCALE / リスクティア / 対応業務領域"
+                        detailText="Methodology →"
+                    />
+                    <ExploreCard
+                        href="/contact"
+                        sectionName="CONTACT"
+                        title="話を聞く"
+                        description="30分オンライン相談 / パイロット申込"
+                        detailText="Contact →"
+                    />
+                </div>
             </div>
         </>
     );
