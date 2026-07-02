@@ -4,12 +4,14 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import SectionTitle from '../components/SectionTitle/SectionTitle'
 import CaseCard from '../components/CaseCard/CaseCard'
+import RoleCard from '../components/RoleCard/RoleCard'
+import RoleTable from '../components/RoleTable/RoleTable'
 
 export default function Hybrid() {
     return (
         <div className={styles.wrapper}>
             {/* ページタイトル */}
-            <div className={styles.hybrid_wrapper}>
+            <section className={styles.hybrid_wrapper}>
                 <PageTitle
                     title="Hybrid"
                     subTitle={
@@ -33,10 +35,10 @@ export default function Hybrid() {
                     height={316}
                     className={styles.pagetitle_logo}
                 />
-            </div>
+            </section>
 
             {/* WHY HYBRID */}
-            <div className={styles.why_hybrid_wrapper}>
+            <section className={styles.why_hybrid_wrapper}>
                 <SectionTitle
                     sectionName="WHY HYBRID"
                     title="「AIだけ」では、届かない場面がある。"
@@ -77,10 +79,10 @@ export default function Hybrid() {
                         />
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* OUR ADVANTAGE */}
-            <div className={styles.our_advantage_wrapper}>
+            <section className={styles.our_advantage_wrapper}>
                 <SectionTitle
                     sectionName="OUR ADVANTAGE"
                     title="Asikazeグループだから。"
@@ -132,7 +134,41 @@ export default function Hybrid() {
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            {/* TALENT POOL */}
+            <section className={styles.talent_pool_wrapper}>
+                <SectionTitle
+                    sectionName="TALENT POOL"
+                    title="ご一緒する人材"
+                    text="役割と稼働形態に応じて、必要な人材がチームに加わります。"
+                />
+                <div className={styles.role_wrapper}>
+                    <RoleCard
+                        number="ROLE 01"
+                        title="HR導入コンサルタント"
+                        text="HRSaaSの導入や、HR業務フロー改善のスペシャリスト。貴社の業務をBFCに分解し、AI適用ポイントを特定します。"
+                    />
+                    <RoleCard
+                        number="ROLE 02"
+                        title="FDE／AI Agent エンジニア"
+                        text="お客様の現場に入り込み、業務を理解し、AI Agentがわかるスキルに整理していきます。Claude / Anthropic Managed Agents を扱う技術を補修し、Skill実装、SaaS接続、コーディング、デバッグまで対応します。"
+                    />
+                    <RoleCard
+                        number="ROLE 03"
+                        title="Skill ライター（プロンプトエンジニア）"
+                        text="業務マニュアル → プロンプト / ポリシー / テストへの翻訳ができる、ベテラン業務知 × プロンプト力をもった人材です。"
+                    />
+                    <RoleCard
+                        number="ROLE 04"
+                        title="AI管理者（オペレーター）"
+                        text="稼働後の監視・例外対応・Skill改版を担当。AIを「見守る人」としてサポートします。しっかりとAI Agentが現場で稼働し始め、長期的な改善や活用支援のためにサポートいたします。"
+                    />
+                </div>
+                <div className={styles.role_table_wrapper}>
+                    <RoleTable />
+                </div>
+            </section>
         </div>
     )
 }

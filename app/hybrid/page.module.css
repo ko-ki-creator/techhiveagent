@@ -73,6 +73,10 @@
     flex: 1;
 }
 
+.our_advantage_wrapper {
+    margin-bottom: 160px;
+}
+
 .our_advantage_inner {
     display: flex;
     align-items: center;
@@ -126,6 +130,13 @@
     }
 }
 
+
+.role_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 40px;
+}
 
 
 
