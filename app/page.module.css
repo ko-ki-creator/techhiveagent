@@ -493,6 +493,7 @@ A NEW STANDARD
     padding: 24px;
     box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.24);
     border-radius: 16;
+    background-color: var(--white);
 }
 
 .axis_group {
@@ -556,6 +557,7 @@ EXPLORE
     text-decoration: none;
     width: 100%;
     transition: all 0.3s ease;
+    background-color: var(--white);
 
     &:hover {
         background-color: #d4e6fa;

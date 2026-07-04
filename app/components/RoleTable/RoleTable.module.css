@@ -1,0 +1,105 @@
+.role_table_wrapper {
+    border: 1px solid var(--blue);
+    border-radius: 8;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--white);
+}
+
+.title {
+    text-align: left;
+}
+
+.map {
+    color: var(--blue);
+}
+
+.build {
+    color: var(--purple);
+}
+
+.scale {
+    color: var(--green);
+}
+
+.map_blue {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--blue);
+    border-radius: 10;
+}
+
+.circle {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--black);
+    border-radius: 10;
+}
+
+.build_purple {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--purple);
+    border-radius: 10;
+}
+
+.build_green {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--green);
+    border-radius: 10;
+}
+
+.gray_circle {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--gray);
+    border-radius: 10;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.tr th {
+    border-bottom: 1px solid #DDD;
+    padding: 16px 0;
+}
+
+.tr td {
+    border-bottom: 1px solid #DDD;
+    padding: 16px 0;
+    width: 20%;
+}
+
+.tr td:first-child {
+    text-align: left;
+}
+
+.tr td:not(:first-child) {
+    text-align: center;
+}
+
+.tr td span {
+    display: inline-block;
+}
+
+.supplement {
+    display: flex;
+    gap: 16px;
+    color: var(--gray);
+}
+
+.main_charge,
+.support {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}

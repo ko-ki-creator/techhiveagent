@@ -178,6 +178,7 @@
     padding: 16px 32px;
     border-radius: 8px;
     box-shadow: var(--blue_shadow);
+    background-color: var(--white);
 }
 
 .bfc_text {

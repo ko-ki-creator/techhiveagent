@@ -169,6 +169,15 @@ export default function Hybrid() {
                     <RoleTable />
                 </div>
             </section>
+
+            {/* VS THE OTHERS */}
+            <section className={styles.others_wrapper}>
+                <SectionTitle
+                    sectionName="VS THE OTHERS"
+                    title="他とは、違う"
+                />
+                
+            </section>
         </div>
     )
 }

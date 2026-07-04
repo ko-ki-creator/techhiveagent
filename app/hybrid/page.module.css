@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    background-color: var(--white);
 }
 
 .spectrum_title {
@@ -102,6 +103,8 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    background-color: var(--white);
+    border-radius: 8;
 
     .line {
         border: 1px solid #DDDDDD;
@@ -138,6 +141,8 @@
     margin-bottom: 40px;
 }
 
-
+.talent_pool_wrapper {
+    margin-bottom: 160px;
+}
 
 

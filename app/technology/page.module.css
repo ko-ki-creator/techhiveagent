@@ -24,6 +24,7 @@
     width: 50%;
     margin: 0 auto 40px;
     padding: 16px;
+    background-color: var(--white);
 }
 
 .anthropic {
@@ -62,6 +63,7 @@
     flex-direction: column;
     gap: 16px;
     border-radius: 16;
+    background-color: var(--white);
 }
 
 .security_content {
