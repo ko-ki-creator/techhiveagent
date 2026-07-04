@@ -6,6 +6,8 @@ import SectionTitle from '../components/SectionTitle/SectionTitle'
 import CaseCard from '../components/CaseCard/CaseCard'
 import RoleCard from '../components/RoleCard/RoleCard'
 import RoleTable from '../components/RoleTable/RoleTable'
+import OthersTable from '../components/OthersTable/OthersTable'
+import Link from 'next/link'
 
 export default function Hybrid() {
     return (
@@ -176,7 +178,40 @@ export default function Hybrid() {
                     sectionName="VS THE OTHERS"
                     title="他とは、違う"
                 />
-                
+                <OthersTable />
+
+                <div className={styles.others_card_container}>
+                    <div className={styles.others_card}>
+                        <p className={styles.kinds}>SaaSベンダー</p>
+                        <h3 className={styles.title}>ソフトを提供</h3>
+                        <p className={styles.text}>
+                            ソフトウェアの提供がメインとなり、業務整理フェーズから参画することは少ない。導入後もカスタマーサクセスがサポートするが、顧客現場に入り込むまでの深さはない場合が多い。
+                        </p>
+                    </div>
+                    <div className={styles.others_card}>
+                        <p className={styles.kinds}>SIer</p>
+                        <h3 className={styles.title}>IT導入のスペシャリスト</h3>
+                        <p className={styles.text}>
+                            主にIT知見に長け、導入から実装まで責任を持って担当する。一方でHRの業務運用には深い知見がない場合が多い。構造上、長く現場に入ることが売上になるため、積極的に自走支援を行うインセンティブは無い。
+                        </p>
+                    </div>
+                    <div className={styles.others_card_blue}>
+                        <p className={styles.kinds_blue}>ASIKAZE</p>
+                        <h3 className={styles.title}>AI + 人、ともに動く。</h3>
+                        <p className={styles.text}>
+                            HR業務知 × AI実装力 を併せ持つチームが、MAP → BUILD → SCALE で伴走。最後は自走化。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* CTA */}
+            <section className={styles.cta}>
+                <h3 className={styles.cta_title}>ソフトだけじゃ動かないなら、<br />人も、ともに動きます。</h3>
+                <p className={styles.cta_text}>まずは貴社の業務を診断し、「AIで巻き取れる業務」と「人でフォローする業務」を仕分けます。</p>
+                <Link href="/contact" className={styles.cta_btn}>
+                    <span className={styles.cta_btn_text}>お問い合わせ・商談予約 →</span>
+                </Link>
             </section>
         </div>
     )
