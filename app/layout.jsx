@@ -12,7 +12,7 @@ export default function layout({ children }) {
     <html
       lang="en"
     >
-      <body>
+      <body suppressHydrationWarning>
         <Header />
         {children}
         <Footer />

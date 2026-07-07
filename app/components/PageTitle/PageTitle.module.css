@@ -7,13 +7,10 @@
 .title {
     color: var(--blue);
     font-size: 5em;
+    line-height: 1em;
 }
 
 .sub_title {
     color: var(--brack);
     font-size: 2em;
-}
-
-.text {
-    /* width: 60%; */
 }

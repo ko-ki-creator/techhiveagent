@@ -44,7 +44,7 @@
     letter-spacing: 8%;
     overflow: hidden;
     color: transparent;
-    text-shadow: 0 -1.5em 0 var(--brack), 0 0 0 var(--brack);
+    text-shadow: 0 -1.5em 0 var(--black), 0 0 0 var(--black);
     transition: text-shadow 0.3s;
 
     &:hover {

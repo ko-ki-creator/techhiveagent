@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     max-width: 92%;
-    margin: 24px auto;
+    margin: 24px auto 80px;
     gap: 16px;
 }
 
@@ -41,14 +41,16 @@
     text-decoration: none;
     overflow: hidden;
     color: transparent;
-    text-shadow: 0 -2.0em 0 var(--white), 0 0 0 var(--white);
+    text-shadow: 0 -2.0em 0 #edf7fc, 0 0 0 #edf7fc;
     transition: text-shadow 0.3s;
     background-color: var(--black);
     padding: 9px 24px;
     border-radius: 20;
     letter-spacing: 8%;
+    transition: all 0.3s ease;
 
     &:hover {
-        text-shadow: 0 0 0 var(--blue), 0 2.0em 0 var(--white);
+        text-shadow: 0 0 0 var(--blue), 0 2.0em 0 #edf7fc;
+        background-color: var(--white);
     }
 }

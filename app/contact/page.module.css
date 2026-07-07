@@ -1,0 +1,28 @@
+.wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto 160px;
+}
+
+.contact_wrapper {
+    margin-bottom: 160px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    position: relative;
+}
+
+.pagetitle_logo {
+    position: absolute;
+    top: -40px;
+    right: -120px;
+    z-index:  -1;
+}
+
+.page_title {
+    width: 40%;
+}
+
+.contact_form {
+    width: 80%;
+}

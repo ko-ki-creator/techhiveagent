@@ -13,7 +13,7 @@ export default function Footer() {
                             <Link href="/" className={style.li_item}>TOP</Link>
                         </li>
                         <li className={style.nav_li}>
-                            <Link href="/methdology" className={style.li_item}>METHODOLOGY</Link>
+                            <Link href="/methodology" className={style.li_item}>METHODOLOGY</Link>
                         </li>
                         <li className={style.nav_li}>
                             <Link href="/technology" className={style.li_item}>TECHNOLOGY</Link>
@@ -22,11 +22,11 @@ export default function Footer() {
                             <Link href="/hybrid" className={style.li_item}>HYBRID</Link>
                         </li>
                         <li className={style.nav_li}>
-                            <Link href="/about" className={style.li_item}>ABOUT</Link>
+                            <Link href="https://www.asikaze.com/about" target="_blank" className={style.li_item}>ABOUT</Link>
                         </li>
                     </ul>
                 </nav>
-                <Link href="/" className={style.contact_btn}>
+                <Link href="/contact" className={style.contact_btn}>
                     <Image
                         src="/images/mail_icon.svg"
                         alt="メールアイコン"

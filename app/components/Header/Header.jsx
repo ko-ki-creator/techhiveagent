@@ -28,7 +28,7 @@ export default function Header() {
                         <Link href="/hybrid" className={style.li_item}>HYBRID</Link>
                     </li>
                     <li className={style.nav_li}>
-                        <Link href="https://www.asikaze.com/about" className={style.li_item}>ABOUT</Link>
+                        <Link href="https://www.asikaze.com/about" arget="_blank" className={style.li_item}>ABOUT</Link>
                     </li>
                     <li className={style.nav_li}>
                         <Link href="/contact" className={style.contact_btn}>CONTACT</Link>
